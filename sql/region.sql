@@ -1,9 +1,5 @@
 /*
 Navicat MySQL Data Transfer
-Source Server         : yuanmu-aliyun
-Source Server Version : 50641
-Target Server Type    : MYSQL
-Target Server Version : 50641
 Date: 2019-04-29 11:15:47
 */
 
