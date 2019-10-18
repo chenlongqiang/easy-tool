@@ -1,3 +1,5 @@
+# alias
+alias ..="cd .."
 alias gs="git status"
 alias op="explorer ."
 alias pj="cd /d/project"
