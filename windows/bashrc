@@ -1,0 +1,24 @@
+alias gs="git status"
+alias op="explorer ."
+alias pj="cd /d/project"
+alias dr="cd /d/docker"
+alias sub="/d/Program\ Files/Sublime\ Text3/sublime_text.exe"
+alias gitacp='_my_gitacp(){
+if [[ ! -d .git && ! -f .git ]];then
+    echo "[error] now in "`pwd`" is no git path"
+    return 1
+fi
+if [[ $1 == "" ]];then
+    echo "[error] gitacp \"msg can\`t be empty\""
+    return 1
+fi
+git_status=`git status | grep "nothing to commit, working tree clean" | wc -l`;
+if [[ $git_status -eq 1 ]];then
+    echo "[warning] nothing to commit"
+    return 1
+fi
+git add .
+git commit -m "$1"
+git push
+}; _my_gitacp'
+
