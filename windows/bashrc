@@ -1,3 +1,4 @@
+
 # alias
 alias ..="cd .."
 alias gs="git status"
@@ -5,6 +6,8 @@ alias op="explorer ."
 alias pj="cd /d/project"
 alias dr="cd /d/docker"
 alias sub="/d/Program\ Files/Sublime\ Text3/sublime_text.exe"
+alias grep="grep --color=auto"
+alias tree="winpty tree.com"
 alias gitacp='_my_gitacp(){
 if [[ ! -d .git && ! -f .git ]];then
     echo "[error] now in "`pwd`" is no git path"
