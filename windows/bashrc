@@ -8,6 +8,7 @@ alias dr="cd /d/docker"
 alias sub="/d/Program\ Files/Sublime\ Text3/sublime_text.exe"
 alias grep="grep --color=auto"
 alias tree="winpty tree.com"
+alias ping="winpty ping"
 alias gitacp='_my_gitacp(){
 if [[ ! -d .git && ! -f .git ]];then
     echo "[error] now in "`pwd`" is no git path"
